@@ -1,3 +1,10 @@
+body, html {
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default padding */
+  width: 100%; /* Ensures the body takes the full width */
+}
+
 /* Reset some default styles */
 body, h1, p, button, ul, li, a {
   margin: 0;
