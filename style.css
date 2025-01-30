@@ -1,0 +1,119 @@
+/* Reset some default styles */
+body, h1, p, button, ul, li, a {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden; /* Ensure the image doesn't overflow */
+}
+
+/* Background Image */
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Ensure it stays behind the content */
+}
+
+.background-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the entire area */
+}
+
+/* Content Overlay */
+.content-overlay {
+  position: absolute;
+  top: 50%;
+  left: 10%; /* Adjust this value to position the content */
+  transform: translateY(-50%);
+  color: white; /* Text color */
+  max-width: 40%; /* Limit the width of the content */
+}
+
+.content-overlay h1 {
+  font-size: 3rem; /* Adjust the font size */
+  margin-bottom: 20px;
+}
+
+.content-overlay p {
+  font-size: 1.5rem; /* Adjust the font size */
+  margin-bottom: 30px;
+}
+
+.content-overlay button {
+  background-color: #ff6600; /* Button background color */
+  color: white; /* Button text color */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.content-overlay button:hover {
+  background-color: #e65c00; /* Darker shade on hover */
+}
+
+/* Navigation Bar */
+.navbar {
+  position: absolute; /* Position over the background image */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Transparent background */
+  padding: 10px 20px;
+  box-sizing: border-box;
+  z-index: 10; /* Ensure navbar is above the background section */
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.navbar ul li {
+  margin-right: 20px;
+}
+
+.navbar ul li a {
+  color: white;
+  font-size: 18px;
+  padding: 10px 15px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Hover effect */
+}
+
+/* Rest of the Content */
+.content {
+  position: relative;
+  padding: 20px;
+  background-color: white; /* Add a background color for the content */
+  z-index: 1; /* Ensure content is above the fixed background */
+}
+
+/* Services grid */
+.grid-container{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+.grid-container img{
+  width: 100%;
+  max-height: 250px;
+  text-align: center;
+}
